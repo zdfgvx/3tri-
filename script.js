@@ -7,6 +7,7 @@ if (!localStorage.getItem('nome')) {
 }
 // quando o botão é apertado //
 function pegaValor() {
+    
     //armazenha os valores do inputs no localStorege //
     let nome = document.getElementById("nome").value;
     let email = document.getElementById("email").value;
@@ -14,10 +15,16 @@ function pegaValor() {
     localStorage.setItem('nome', nome);
     localStorage.setItem('Email', email);
     localStorage.setItem('senha', senha);
-    alert('Login finalizado com sucesso');
-}
-function pegaValorProduto() {
+    
+    let redirecionar = confirm("login feito com sucesso!");
 
+    if (redirecionar == true){
+        window.location  = "https://zdfgvx.github.io/atelieale/";
+    }
+    
+}
+function pegaValorProduto(event) {
+    
     let quantidadeProduto = document.getElementById('quantidade').value;
     let cor = document.getElementById('cor');
     let corValor = cor.options[cor.selectedIndex].text;
@@ -62,7 +69,11 @@ function finalizar(){
     }
 }
 
+//------------------------------------------------------------------------//
+let imagem = document.querySelector('.maisImagem');
 
-
+imagem.addEventListener('click', function sfddfs(){
+    alert('ola mundo')
+})
 
 

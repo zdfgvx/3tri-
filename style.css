@@ -76,7 +76,7 @@ header {
   transition-duration: .5s;
 }
 .logo{
-  width: 5%;
+  width: 80px;
   display: flex;
 }
 .cabecalho{
@@ -246,15 +246,15 @@ form {
 
 .conteiberDescricao {
   display: flex;
+
   width: 75%
+
 }
 
 .compras {
   display: flex;
   flex-direction: row-reverse;
-  position: absolute;
-  right: 390px;
-  top: 640px;
+  margin-top: 20px;
 
 }
 /*-botão de adicionar ao Carrinho--*/
