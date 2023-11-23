@@ -16,11 +16,18 @@ function pegaValor() {
     localStorage.setItem('Email', email);
     localStorage.setItem('senha', senha);
     
-    let redirecionar = confirm("login feito com sucesso!");
+    
+    let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (redirecionar == true){
-        window.location  = "https://zdfgvx.github.io/atelieale/";
+    if (regexEmail.test(email)) {
+        alert('Email válido!');
+        window.location.assign("index.html");
+    } else {
+        alert('Por favor, insira um email válido.');
     }
+
+    
+
     
 }
 function pegaValorProduto(event) {
